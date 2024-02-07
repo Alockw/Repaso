@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int Cara=1;
+    srand(static_cast<unsigned int>(time(0)));
+    int Resultado=rand()%2+1;
     int Jugador;
     cout<<"que cree que caera cara[1] o sello[2] : "<<endl;
     cin>>Jugador;
-    if (Jugador==Cara){
+    if (Jugador==Resultado){
         cout<<"Felicidades hacertaste"<<endl;
     }
     else {
